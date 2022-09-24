@@ -173,7 +173,6 @@ tar_word = ''
 tar_char = ''
 reshuffle()
 init()
-
 # Start 5 sec thread
 t_5s = threading.Thread(target=handler_5s)
 t_5s.start()

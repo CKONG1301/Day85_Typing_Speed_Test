@@ -1,5 +1,4 @@
 import random
-import tkinter
 from tkinter import *
 import threading
 import time
@@ -97,7 +96,7 @@ def check_key(entry_char):
 
 
 def click(key):
-    global start_test, t_5s, bind_id
+    global start_test, t_5s
     if not start_test:
         init()
         start_test = True
@@ -128,6 +127,7 @@ def init():
     user_entry.delete(0, END)
     user_entry.config(state='normal')
     start_test = False
+
 
 def reshuffle():
     global words
